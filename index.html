@@ -76,15 +76,15 @@
     var words2 = ['water', 'plant', 'lamp', 'bat(Animal)', 'baseball', 'sticker'];
 
     function shuffleArray2(array2) {
-        for (var i = array.length - 1; i > 0; i--) {
-            var j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
+        for (var a = array.length - 1; a > 0; a--) {
+            var b = Math.floor(Math.random() * (a + 1));
+            [array[a], array[b]] = [array[b], array[a]];
         }
     }
 
     function displayWords2() {
         var randomWordsElement2 = document.getElementById('randomWords2');
-        randomWordsElement2.textContent = words.join(', ');
+        randomWordsElement2.textContent = words2.join(', ');
     }
 
     function rerollWords2() {
